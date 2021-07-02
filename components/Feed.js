@@ -72,7 +72,7 @@ function Feed({posts}) {
             .putString(imagepost, "data_url");
           Removeimage();
           uploadTask.on(
-            "state_change",
+            "state",
             null,
             (err) => console.log(err),
             () => {
@@ -99,7 +99,7 @@ function Feed({posts}) {
  
     return (
       
-        <div className="hidden  lg:flex flex-col  mt-2  w-6/12 h-screen mr-4 overflow-x-hidden scrollbar-hide">
+        <div className="lg:flex flex-col  mt-2  w-6/12 h-screen mr-4 overflow-x-hidden scrollbar-hide">
 
         <div className="rounded-2xl mt-10 bg-white mr-4 ">
 
